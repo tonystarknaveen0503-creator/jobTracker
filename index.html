@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>JobTrackr - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <h2 class="logo">JobTracker</h2>
+    <a href="index.html" class="active">Dashboard</a>
+    <a href="applications.html">Applications</a>
+    <a href="add-application.html">Add Application</a>
+    <button class="dark-btn" onclick="toggleDark()">Toggle Dark Mode</button>
+  </aside>
+
+  <main class="main">
+
+    <div class="topbar">
+      <h1>Dashboard</h1>
+      <div>👤 Naveen</div>
+    </div>
+
+    <div class="stats">
+      <div class="stat-box">
+        <p>Total Applications</p>
+        <h2 id="totalCount">0</h2>
+      </div>
+
+      <div class="stat-box">
+        <p>Interviews</p>
+        <h2 id="interviewCount">0</h2>
+      </div>
+
+      <div class="stat-box">
+        <p>Offers</p>
+        <h2 id="offerCount">0</h2>
+      </div>
+    </div>
+
+    <div class="chart-box">
+      <canvas id="jobChart" height="200"></canvas>
+    </div>
+
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

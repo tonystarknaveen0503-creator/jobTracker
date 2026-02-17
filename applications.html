@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Applications</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <h2 class="logo">JobTrackr</h2>
+    <a href="index.html">Dashboard</a>
+    <a href="applications.html" class="active">Applications</a>
+    <a href="add-application.html">Add Application</a>
+  </aside>
+
+  <main class="main">
+
+    <div class="topbar">
+      <h1>Applications</h1>
+      <input type="text" id="searchInput" placeholder="Search company...">
+    </div>
+
+    <table class="app-table">
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Role</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="applicationList"></tbody>
+    </table>
+
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

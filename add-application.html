@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Add Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <h2 class="logo">JobTrackr</h2>
+    <a href="index.html">Dashboard</a>
+    <a href="applications.html">Applications</a>
+    <a href="add-application.html" class="active">Add Application</a>
+  </aside>
+
+  <main class="main">
+
+    <h1>Add / Edit Application</h1>
+
+    <form id="jobForm" class="form-box">
+      <input type="text" id="company" placeholder="Company Name" required>
+      <input type="text" id="role" placeholder="Job Role" required>
+
+      <select id="status">
+        <option>Applied</option>
+        <option>Interview</option>
+        <option>Offer</option>
+        <option>Rejected</option>
+      </select>
+
+      <button type="submit">Save Application</button>
+    </form>
+
+  </main>
+
+</div>
+
+<div id="successModal" class="modal">
+  <div class="modal-content">
+    <p>Application Saved Successfully!</p>
+    <button onclick="closeModal()">OK</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
